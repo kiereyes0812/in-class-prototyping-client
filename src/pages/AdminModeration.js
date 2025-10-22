@@ -3,7 +3,7 @@ import { Card, Button, Spinner, Collapse } from "react-bootstrap";
 import UserContext from "../UserContext";
 import { useNavigate } from "react-router-dom";
 
-const API_BASE = "http://localhost:4000";
+const API_BASE = "https://in-class-prototyping-api.onrender.com";
 const POSTS_BASE = "/posts"; // server mounts post routes at /posts
 
 export default function AdminModeration() {

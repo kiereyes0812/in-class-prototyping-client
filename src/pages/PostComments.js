@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { Card, Button, Spinner, Form } from "react-bootstrap";
 import UserContext from "../UserContext";
 
-const API_BASE = "http://localhost:4000";
+const API_BASE = "https://in-class-prototyping-api.onrender.com";
 const POSTS_BASE = "/posts";
 
 export default function PostComments() {

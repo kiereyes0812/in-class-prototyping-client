@@ -3,7 +3,7 @@ import { Card, Button, Spinner, Modal, Form } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import UserContext from "../UserContext"; // assumes you store user + isAdmin after login
 
-const API_BASE = "http://localhost:4000";
+const API_BASE = "https://in-class-prototyping-api.onrender.com";
 const POSTS_BASE = "/posts"; // because server mounts postRoutes at /posts
 
 export default function AllPosts() {

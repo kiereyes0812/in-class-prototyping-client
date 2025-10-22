@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Form, Button, Spinner } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
-const API_BASE = "http://localhost:4000";
+const API_BASE = "https://in-class-prototyping-api.onrender.com";
 const POSTS_BASE = "/posts"; // because app.use("/posts", postRoutes)
 
 export default function AddPost() {

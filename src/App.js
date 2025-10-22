@@ -24,7 +24,7 @@ function App() {
 
     useEffect(() => {
 
-    fetch(`http://localhost:4000/users/details`, {
+    fetch(`https://in-class-prototyping-api.onrender.com/users/details`, {
       headers: {
         Authorization: `Bearer ${ localStorage.getItem('token') }`
       }

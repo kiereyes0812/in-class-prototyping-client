@@ -22,7 +22,7 @@ export default function Login() {
 
     try {
       // 1) login
-      const res = await fetch('http://localhost:4000/users/login', {
+      const res = await fetch('https://in-class-prototyping-api.onrender.com/users/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ identifier: identifier.trim(), password })
@@ -42,7 +42,7 @@ export default function Login() {
       localStorage.setItem('token', data.access);
 
       // 3) fetch profile using Bearer token
-      const profRes = await fetch('http://localhost:4000/users/details', {
+      const profRes = await fetch('https://in-class-prototyping-api.onrender.com/users/details', {
         headers: { Authorization: `Bearer ${data.access}` }
       });
       const prof = await profRes.json().catch(() => ({}));

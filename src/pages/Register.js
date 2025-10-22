@@ -49,7 +49,7 @@ export default function Register() {
   setIsSubmitting(true);
 
   try {
-    const res = await fetch('http://localhost:4000/users/register', {
+    const res = await fetch('https://in-class-prototyping-api.onrender.com/users/register', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -88,7 +88,7 @@ export default function Register() {
 };
 
   // Optional: if already logged in, redirect away from register
-  if (user?.id) return <Navigate to="/tasks" replace />;
+  if (user?.id) return <Navigate to="/allPosts" replace />;
 
   const strengthNow = (passScore / 5) * 100;
   const strengthLabel =
